@@ -15,14 +15,16 @@
 <!-- ═══════════════════════ NAV ═══════════════════════ -->
 <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
   <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="The Harvest Table — Home">The Harvest Table</a>
+    <a href="index.html" class="nav__logo">The Harvest Table</a>
     <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav__links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
       <li><a href="about.html">Our Story</a></li>
+      <li><a href="private-dining.html">Private Dining</a></li>
       <li><a href="reservations.html">Reservations</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="reservations.html" class="nav__reserve">Reserve a Table</a></li>
@@ -30,16 +32,12 @@
   </div>
 </nav>
 
-<!-- ═══════════════════════ HERO ═══════════════════════ -->
-<section class="hero" aria-label="Welcome">
-  <div class="hero__bg" role="presentation"></div>
-  <div class="hero__texture" role="presentation"></div>
-  <div class="hero__overlay" role="presentation"></div>
-
-  <div class="hero__content">
-    <div class="hero__inner">
+<!-- ═══════════════════════ HERO (Editorial Split) ═══════════════════════ -->
+<section class="hero" aria-label="Welcome to The Harvest Table">
+  <div class="hero__left">
+    <div class="hero__left-inner">
       <div class="hero__label">
-        <span class="label">Toronto, Ontario</span>
+        <span class="label">Est. 2018 · Toronto, Ontario</span>
       </div>
       <h1>The<br />Harvest<br />Table</h1>
       <p class="sub">Where Ontario's Seasons Come to the Table</p>
@@ -49,20 +47,44 @@
       </div>
     </div>
   </div>
-
-  <div class="hero__scroll" aria-hidden="true">
-    <div class="hero__scroll-line"></div>
-    <span>Scroll</span>
+  <div class="hero__right">
+    <div class="photo-placeholder photo-placeholder--food-hero" role="img" aria-label="A beautifully plated seasonal dish from The Harvest Table kitchen">
+      <!-- PHOTO SWAP INSTRUCTIONS: Replace this div with <img src="images/hero-food.jpg" alt="..."> Recommended: 960×1080px portrait -->
+      <div class="photo-placeholder__label">Hero food photo — replace with image</div>
+    </div>
+    <div class="hero__badge">
+      <div class="hero__badge-number">16+</div>
+      <div class="hero__badge-label">Ontario farm partners</div>
+    </div>
   </div>
 </section>
 
+<!-- ═══════════════════════ STAT BAR ═══════════════════════ -->
+<div class="stat-bar reveal">
+  <div class="stat-bar__item">
+    <div class="stat-bar__number">16</div>
+    <div class="stat-bar__label">Ontario Farm Partners</div>
+  </div>
+  <div class="stat-bar__item">
+    <div class="stat-bar__number">6</div>
+    <div class="stat-bar__label">VQA Winery Partners</div>
+  </div>
+  <div class="stat-bar__item">
+    <div class="stat-bar__number">100%</div>
+    <div class="stat-bar__label">Ontario Sourced Proteins</div>
+  </div>
+  <div class="stat-bar__item">
+    <div class="stat-bar__number">Est.</div>
+    <div class="stat-bar__label">2018 · The Annex, Toronto</div>
+  </div>
+</div>
+
 <!-- ═══════════════════════ INTRO SPLIT ═══════════════════════ -->
-<section class="section section--dark" aria-label="Introduction">
+<section class="section section--white" aria-label="Introduction">
   <div class="split reveal">
     <div class="split__image">
       <div class="photo-placeholder photo-placeholder--interior" role="img" aria-label="The warm, candlelit interior of The Harvest Table dining room">
-        <!-- PHOTO SWAP INSTRUCTIONS: Replace this div with an <img> tag.
-             Recommended size: 800×1000px. File: images/interior-dining.jpg -->
+        <!-- PHOTO SWAP INSTRUCTIONS: Replace with images/interior-dining.jpg — 800×1000px -->
         <div class="photo-placeholder__label">Interior dining room — replace with photo</div>
       </div>
     </div>
@@ -70,7 +92,7 @@
       <span class="label">Rooted in Ontario</span>
       <h2>Where Every Season Tells a Story</h2>
       <p class="sub">Handcrafted dishes built on relationships with Ontario farmers, vintners, and artisans.</p>
-      <p>We opened The Harvest Table with a single conviction: that a great meal begins long before the kitchen. It begins in the fields of Prince Edward County, the orchards of Grey County, and the vineyards stretching along the Niagara Peninsula.</p>
+      <p>We opened The Harvest Table with a single conviction: that a great meal begins long before the kitchen. It begins in the fields of Prince Edward County, the orchards of Grey County, and the vineyards of the Niagara Peninsula.</p>
       <p>Our menu shifts with the seasons — because the best ingredient is always the freshest one available from our neighbours who grow it with care.</p>
       <a href="about.html" class="btn btn--outline">Our Story</a>
     </div>
@@ -78,7 +100,7 @@
 </section>
 
 <!-- ═══════════════════════ FEATURED DISHES ═══════════════════════ -->
-<section class="section section--darker section--clip-both" aria-label="Featured dishes">
+<section class="section section--parchment section--clip-both" aria-label="Featured dishes">
   <div class="container">
     <div class="section__header reveal">
       <span class="label">From Our Kitchen</span>
@@ -91,7 +113,7 @@
         <div class="dish-card__image">
           <div class="photo-placeholder photo-placeholder--dish-1" role="img" aria-label="Pan-seared Lake Erie pickerel with leek fondue and fingerling potatoes">
             <!-- PHOTO SWAP INSTRUCTIONS: Replace with images/dish-pickerel.jpg -->
-            <div class="photo-placeholder__label">Lake Erie Pickerel — replace with photo</div>
+            <div class="photo-placeholder__label">Lake Erie Pickerel</div>
           </div>
         </div>
         <div class="dish-card__body">
@@ -105,7 +127,7 @@
         <div class="dish-card__image">
           <div class="photo-placeholder photo-placeholder--dish-2" role="img" aria-label="Braised Grey County short rib with celery root purée and gremolata">
             <!-- PHOTO SWAP INSTRUCTIONS: Replace with images/dish-shortrib.jpg -->
-            <div class="photo-placeholder__label">Braised Short Rib — replace with photo</div>
+            <div class="photo-placeholder__label">Braised Short Rib</div>
           </div>
         </div>
         <div class="dish-card__body">
@@ -119,7 +141,7 @@
         <div class="dish-card__image">
           <div class="photo-placeholder photo-placeholder--dish-3" role="img" aria-label="Maple Crème Brûlée with Niagara Peninsula maple syrup and seasonal berries">
             <!-- PHOTO SWAP INSTRUCTIONS: Replace with images/dish-brulee.jpg -->
-            <div class="photo-placeholder__label">Maple Crème Brûlée — replace with photo</div>
+            <div class="photo-placeholder__label">Maple Crème Brûlée</div>
           </div>
         </div>
         <div class="dish-card__body">
@@ -137,27 +159,27 @@
 </section>
 
 <!-- ═══════════════════════ SOURCING SPLIT ═══════════════════════ -->
-<section class="section section--dark" aria-label="Sourcing philosophy">
+<section class="section section--white" aria-label="Sourcing philosophy">
   <div class="split split--reverse reveal">
     <div class="split__text">
       <span class="label">Our Sourcing</span>
       <h2>The Provenance Behind Every Plate</h2>
       <p class="sub">We know our farmers by name. We visit their fields. We trust their craft.</p>
-      <p>Our proteins come from heritage-breed farms in Grey County. Our produce arrives weekly from market gardens in Prince Edward County. Our wine list celebrates the extraordinary VQA vintners of the Niagara Peninsula — because Ontario's terroir deserves its moment at the table.</p>
+      <p>Our proteins come from heritage-breed farms in Grey County. Our produce arrives weekly from market gardens in Prince Edward County. Our wine list celebrates Ontario's extraordinary VQA vintners — because Ontario's terroir deserves its moment at the table.</p>
       <p>No imported fillers. No flavour approximations. Just Ontario, at its honest best.</p>
       <a href="about.html" class="btn btn--outline">Meet Our Partners</a>
     </div>
     <div class="split__image">
       <div class="photo-placeholder photo-placeholder--farm" role="img" aria-label="Rolling farm fields of Prince Edward County at harvest time">
         <!-- PHOTO SWAP INSTRUCTIONS: Replace with images/farm-pec.jpg -->
-        <div class="photo-placeholder__label">Prince Edward County farm — replace with photo</div>
+        <div class="photo-placeholder__label">Prince Edward County farm</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════ TESTIMONIALS ═══════════════════════ -->
-<section class="section section--mid section--clip-top" aria-label="Guest reviews">
+<section class="section section--parchment section--clip-top" aria-label="Guest reviews">
   <div class="container">
     <div class="section__header reveal">
       <span class="label">What Guests Say</span>
@@ -167,35 +189,52 @@
     <div class="testimonials__grid">
       <div class="testimonial reveal reveal--delay-1">
         <div class="testimonial__quote" aria-hidden="true">&ldquo;</div>
-        <p class="testimonial__text">The Harvest Table is everything I wish Ontario dining always looked like. Every single dish tasted like someone genuinely cared about where it came from. The pickerel was extraordinary.</p>
+        <p class="testimonial__text">The Harvest Table is everything I wish Ontario dining always looked like. Every dish tasted like someone genuinely cared about where it came from. The pickerel was extraordinary.</p>
         <p class="testimonial__author">Margaret T.</p>
-        <p class="testimonial__source">Toronto Life Reader, Anniversary Dinner</p>
+        <p class="testimonial__source">Toronto Life Reader · Anniversary Dinner</p>
       </div>
-
       <div class="testimonial reveal reveal--delay-2">
         <div class="testimonial__quote" aria-hidden="true">&ldquo;</div>
         <p class="testimonial__text">We hosted a client dinner here and it could not have gone better. The short rib is the best thing I've eaten in Toronto in years. The VQA wine list is a masterclass in what Ontario can produce.</p>
         <p class="testimonial__author">David C.</p>
-        <p class="testimonial__source">Google Review, Business Dinner</p>
+        <p class="testimonial__source">Google Review · Business Dinner</p>
       </div>
-
       <div class="testimonial reveal reveal--delay-3">
         <div class="testimonial__quote" aria-hidden="true">&ldquo;</div>
-        <p class="testimonial__text">I've been to every farm-to-table restaurant in the city. None of them commit like The Harvest Table does. The butter tart cheesecake is outrageously good and entirely Canadian. Bravo.</p>
+        <p class="testimonial__text">None of them commit like The Harvest Table does. The butter tart cheesecake is outrageously good and entirely Canadian. The kind of place you want to bring out-of-town guests. Bravo.</p>
         <p class="testimonial__author">Priya S.</p>
-        <p class="testimonial__source">Yelp Review, Birthday Celebration</p>
+        <p class="testimonial__source">Yelp Review · Birthday Celebration</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ═══════════════════════ PRIVATE DINING TEASE ═══════════════════════ -->
+<section class="section section--white" aria-label="Private dining">
+  <div class="split reveal">
+    <div class="split__image">
+      <div class="photo-placeholder photo-placeholder--cellar" role="img" aria-label="The intimate Cellar private dining room at The Harvest Table, set for a special occasion">
+        <!-- PHOTO SWAP INSTRUCTIONS: Replace with images/private-cellar.jpg -->
+        <div class="photo-placeholder__label">The Cellar — private dining room</div>
+      </div>
+    </div>
+    <div class="split__text">
+      <span class="label">Private Dining</span>
+      <h2>The Cellar — Toronto's Quietest Secret</h2>
+      <p class="sub">An intimate room for twelve. Bespoke menus. Unhurried evenings.</p>
+      <p>Whether it's a milestone celebration, an important client dinner, or a proposal that needs the right backdrop — The Cellar gives you the room, and we take care of everything else. Fully private, beautifully appointed, and available with a curated menu built around your occasion.</p>
+      <a href="private-dining.html" class="btn btn--primary">Enquire About Private Dining</a>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════════════════ CTA BANNER ═══════════════════════ -->
-<section class="section section--dark cta-banner section--clip-top" aria-label="Reservation call to action">
+<section class="section section--terracotta section--clip-top cta-banner" aria-label="Reservation call to action">
   <h2 class="reveal">Join Us for Your Next Special Occasion</h2>
-  <p class="sub reveal reveal--delay-1">Intimate dinners, milestone celebrations, and everyday evenings worth remembering.<br />We hold a selection of tables for walk-ins — or secure yours in advance.</p>
+  <p class="sub reveal reveal--delay-1">Intimate dinners, milestone celebrations, and everyday evenings worth remembering.</p>
   <div class="cta-banner__actions reveal reveal--delay-2">
-    <a href="reservations.html" class="btn btn--primary">Reserve a Table</a>
-    <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+    <a href="reservations.html" class="btn btn--white">Reserve a Table</a>
+    <a href="contact.html" class="btn btn--outline-light">Get in Touch</a>
   </div>
 </section>
 
@@ -211,29 +250,28 @@
         <a href="#" aria-label="Twitter / X">𝕏</a>
       </nav>
     </div>
-
     <div class="footer__col">
       <p class="footer__col-heading">Navigate</p>
       <ul class="footer__nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="about.html">Our Story</a></li>
+        <li><a href="private-dining.html">Private Dining</a></li>
         <li><a href="reservations.html">Reservations</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-
     <div class="footer__col">
       <p class="footer__col-heading">Find Us</p>
       <ul class="footer__contact-list">
         <li>88 Elmwood Avenue<br />Toronto, ON M6G 2K4</li>
         <li><a href="tel:6475550183">(647) 555-0183</a></li>
         <li><a href="mailto:hello@harvesttable.ca">hello@harvesttable.ca</a></li>
-        <li style="margin-top: 4px; font-size: 0.8rem; opacity: 0.5;">Tue – Sun, 5 pm – 10 pm</li>
+        <li style="font-size:0.8rem; opacity:0.5; margin-top:4px;">Tue – Sun, 5 pm – 10 pm</li>
       </ul>
     </div>
   </div>
-
   <div class="footer__bottom">
     <p>&copy; 2024 The Harvest Table. All rights reserved. Licensed by the AGCO.</p>
     <p>88 Elmwood Avenue, Toronto, ON M6G 2K4</p>
