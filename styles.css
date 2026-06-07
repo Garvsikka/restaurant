@@ -1396,17 +1396,12 @@ textarea { resize: vertical; min-height: 130px; }
   .tab-btn { padding: 16px 18px; font-size: 0.68rem; }
 }
 
-/* ─── Real images: override gradient placeholders ────────────────────────
-   These background-image declarations replace the CSS gradient backgrounds.
-   When real client photos are ready, update the paths below.
-   ─────────────────────────────────────────────────────────────────────── */
+/* ─── Real photo img tag styles ─────────────────────────────────────── */
 
-/* Shared rules for all image-bearing containers */
-.split__image img,
-.dish-card__image img,
-.gallery-item img,
-.hero__right img,
-.page-hero img {
+/* Page hero background image — fills the section absolutely */
+.page-hero__bg-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1414,39 +1409,43 @@ textarea { resize: vertical; min-height: 130px; }
   display: block;
 }
 
-/* Photo placeholder → real image swap */
-.photo-placeholder {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Hero right panel — fills the full height column */
+.hero__right img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
-.photo-placeholder--food-hero  { background-image: url('images/hero-food.jpg'); }
-.photo-placeholder--dish-1     { background-image: url('images/dish-1.jpg'); }
-.photo-placeholder--dish-2     { background-image: url('images/dish-2.jpg'); }
-.photo-placeholder--dish-3     { background-image: url('images/dish-3.jpg'); }
-.photo-placeholder--dish-4     { background-image: url('images/dish-4.jpg'); }
-.photo-placeholder--dish-5     { background-image: url('images/dish-5.jpg'); }
-.photo-placeholder--interior   { background-image: url('images/interior.jpg'); }
-.photo-placeholder--interior-2 { background-image: url('images/interior-2.jpg'); }
-.photo-placeholder--farm       { background-image: url('images/farm.jpg'); }
-.photo-placeholder--farm-2,
-.photo-placeholder--gallery-2,
-.photo-placeholder--gallery-6  { background-image: url('images/farm-2.jpg'); }
-.photo-placeholder--chef       { background-image: url('images/chef.jpg'); }
-.photo-placeholder--wine,
-.photo-placeholder--gallery-8  { background-image: url('images/wine.jpg'); }
-.photo-placeholder--cellar     { background-image: url('images/cellar.jpg'); }
-.photo-placeholder--event      { background-image: url('images/event.jpg'); }
-.photo-placeholder--terrace    { background-image: url('images/terrace.jpg'); }
-.photo-placeholder--food-wine,
-.photo-placeholder--gallery-5  { background-image: url('images/food-wine.jpg'); }
-.photo-placeholder--wine-service,
-.photo-placeholder--gallery-4  { background-image: url('images/wine-service.jpg'); }
-.photo-placeholder--gallery-1  { background-image: url('images/dish-1.jpg'); }
-.photo-placeholder--gallery-3  { background-image: url('images/fish-grilled.jpg'); }
-.photo-placeholder--gallery-7  { background-image: url('images/dish-4.jpg'); }
-.photo-placeholder--gallery-9  { background-image: url('images/dish-5.jpg'); }
+/* Split section images — fill the aspect-ratio container */
+.split__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Dish cards — fill the fixed-height image box */
+.dish-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Gallery items — fill the container */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 
 /* Hide the text label overlays now that real images are showing */
 .photo-placeholder__label { display: none; }
