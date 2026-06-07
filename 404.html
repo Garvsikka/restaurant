@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — The Harvest Table</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to The Harvest Table homepage." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav class="nav nav--scrolled" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="The Harvest Table — Home">The Harvest Table</a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservations.html" class="nav__reserve">Reserve a Table</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ 404 CONTENT ═══════════════════════ -->
+<main class="page-404" id="main-content" role="main">
+  <div aria-hidden="true" class="page-404__number">404</div>
+
+  <span class="label" style="margin-bottom: 20px;">Page Not Found</span>
+  <h2>This Table Doesn't Exist</h2>
+  <p style="margin: 0 auto 40px; max-width: 44ch; opacity: 0.65; text-align: center;">
+    The page you were looking for seems to have wandered off — perhaps following the season's harvest somewhere we can't track. Let's get you back to familiar territory.
+  </p>
+
+  <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
+    <a href="index.html" class="btn btn--primary">Back to Home</a>
+    <a href="menu.html" class="btn btn--outline">View Our Menu</a>
+    <a href="reservations.html" class="btn btn--outline">Reserve a Table</a>
+  </div>
+
+  <p style="margin-top: 64px; opacity: 0.35; font-family: var(--font-sub); font-style: italic; font-size: 0.875rem;">
+    Need help? Call us at <a href="tel:6475550183" style="color: var(--terracotta);">(647) 555-0183</a>
+  </p>
+</main>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__logo">The Harvest Table</p>
+      <p class="footer__tagline">Where Ontario's Seasons Come to the Table</p>
+      <nav class="footer__social" aria-label="Social media">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+      </nav>
+    </div>
+    <div class="footer__col">
+      <p class="footer__col-heading">Navigate</p>
+      <ul class="footer__nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <p class="footer__col-heading">Find Us</p>
+      <ul class="footer__contact-list">
+        <li>88 Elmwood Avenue<br />Toronto, ON M6G 2K4</li>
+        <li><a href="tel:6475550183">(647) 555-0183</a></li>
+        <li><a href="mailto:hello@harvesttable.ca">hello@harvesttable.ca</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; 2024 The Harvest Table. All rights reserved. Licensed by the AGCO.</p>
+    <p>88 Elmwood Avenue, Toronto, ON M6G 2K4</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

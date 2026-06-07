@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — The Harvest Table</title>
+  <meta name="description" content="Find The Harvest Table at 88 Elmwood Avenue, Toronto, ON. Call (647) 555-0183 or email us. Open Tuesday through Sunday for dinner service." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav class="nav nav--scrolled" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="The Harvest Table — Home">The Harvest Table</a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservations.html" class="nav__reserve">Reserve a Table</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ PAGE HERO ═══════════════════════ -->
+<section class="page-hero" aria-label="Contact header">
+  <div class="page-hero__bg page-hero__bg--contact" role="presentation"></div>
+  <div class="page-hero__overlay" role="presentation"></div>
+  <div class="page-hero__content">
+    <span class="label">We'd Love to Hear From You</span>
+    <h1>Contact</h1>
+    <p class="sub" style="max-width: 44ch; margin-top: 16px;">Phone, email, or stop by the neighbourhood — we're here.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CONTACT DETAILS + FORM ═══════════════════════ -->
+<section class="section section--dark" aria-label="Contact information and form">
+  <div style="max-width: var(--max-width); margin-inline: auto; padding-inline: 24px;">
+
+    <div class="section__header reveal" style="margin-bottom: 56px;">
+      <span class="label">Get in Touch</span>
+      <h2>Find Us in the Annex</h2>
+    </div>
+
+    <div class="contact-layout">
+      <!-- Contact Info -->
+      <div class="reveal">
+        <div class="contact-info">
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">&#9742;</div>
+            <div class="contact-info__meta">
+              <span class="contact-info__type">Phone</span>
+              <p class="contact-info__value"><a href="tel:6475550183">(647) 555-0183</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">&#9993;</div>
+            <div class="contact-info__meta">
+              <span class="contact-info__type">Email</span>
+              <p class="contact-info__value"><a href="mailto:hello@harvesttable.ca">hello@harvesttable.ca</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">&#8982;</div>
+            <div class="contact-info__meta">
+              <span class="contact-info__type">Address</span>
+              <p class="contact-info__value">88 Elmwood Avenue<br />Toronto, ON M6G 2K4</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">&#9965;</div>
+            <div class="contact-info__meta">
+              <span class="contact-info__type">Neighbourhood</span>
+              <p class="contact-info__value">The Annex — a short walk from Christie or Bathurst TTC stations. Street parking available on Elmwood and Bloor. Green P at Bloor and Bathurst.</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">&#9679;</div>
+            <div class="contact-info__meta">
+              <span class="contact-info__type">Private Dining Enquiries</span>
+              <p class="contact-info__value">For The Cellar (private room, up to 12 guests), bespoke menus, or event partnerships, email <a href="mailto:events@harvesttable.ca" style="color: var(--terracotta);">events@harvesttable.ca</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder" role="img" aria-label="Map showing The Harvest Table location at 88 Elmwood Avenue, Toronto">
+          <!-- PHOTO SWAP INSTRUCTIONS:
+               Option 1 — Google Maps embed: Replace this div with an <iframe> embed from Google Maps.
+               Option 2 — Static map image: Replace with <img src="images/map.jpg" alt="Map to The Harvest Table">
+               The aspect ratio is set to 4/3 in the CSS. -->
+          <p class="map-placeholder__label">Map placeholder — embed Google Maps or add a static map image here<br />88 Elmwood Avenue, Toronto, ON M6G 2K4</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="reveal reveal--delay-2">
+        <h3 style="font-size: 1.75rem; margin-bottom: 32px;">Send Us a Message</h3>
+        <form class="contact-form-wrap" data-form="contact" data-success="Your message has been sent. We typically respond within one business day." data-error="Something went wrong. Please email us directly at hello@harvesttable.ca" novalidate>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label for="contact-first">First Name</label>
+              <input type="text" id="contact-first" name="first_name" placeholder="Isabelle" required autocomplete="given-name" />
+            </div>
+            <div class="form__field">
+              <label for="contact-last">Last Name</label>
+              <input type="text" id="contact-last" name="last_name" placeholder="Moreau" required autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" name="email" placeholder="isabelle@example.com" required autocomplete="email" />
+          </div>
+
+          <div class="form__field">
+            <label for="contact-subject">Subject</label>
+            <select id="contact-subject" name="subject">
+              <option value="" disabled selected>What's this about?</option>
+              <option value="reservation">Reservation enquiry</option>
+              <option value="private-dining">Private dining / events</option>
+              <option value="media">Media or press</option>
+              <option value="partnership">Partnership or supplier</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="form__field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Tell us what's on your mind…" rows="6" required></textarea>
+          </div>
+
+          <div class="form__submit">
+            <button type="submit" class="btn btn--primary" data-label="Send Message">Send Message</button>
+          </div>
+
+          <div class="form-status" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ HOURS GRID ═══════════════════════ -->
+<section class="section section--mid section--clip-top" aria-label="Hours of operation">
+  <div class="container">
+    <div class="section__header reveal">
+      <span class="label">Hours of Service</span>
+      <h2>When We're Open</h2>
+      <p class="sub">Dinner service only. Holiday hours may vary — follow us on social media for updates.</p>
+    </div>
+
+    <div class="hours-grid">
+      <div class="hours-card reveal reveal--delay-1">
+        <span class="label">Tue – Thu</span>
+        <p>Dinner<br />5:00 pm – 10:00 pm<br />Last seating 9:30 pm</p>
+      </div>
+      <div class="hours-card reveal reveal--delay-2">
+        <span class="label">Fri – Sat</span>
+        <p>Dinner<br />5:00 pm – 11:00 pm<br />Last seating 10:00 pm</p>
+      </div>
+      <div class="hours-card reveal reveal--delay-3">
+        <span class="label">Sunday</span>
+        <p>Dinner<br />5:00 pm – 9:00 pm<br />Last seating 8:30 pm</p>
+      </div>
+    </div>
+
+    <p class="reveal" style="margin-top: 36px; opacity: 0.55; font-family: var(--font-sub); font-style: italic; font-size: 0.9rem;">
+      We are closed Mondays. For large group bookings or private events outside standard hours, please email <a href="mailto:events@harvesttable.ca" style="color: var(--terracotta);">events@harvesttable.ca</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__logo">The Harvest Table</p>
+      <p class="footer__tagline">Where Ontario's Seasons Come to the Table</p>
+      <nav class="footer__social" aria-label="Social media">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+      </nav>
+    </div>
+    <div class="footer__col">
+      <p class="footer__col-heading">Navigate</p>
+      <ul class="footer__nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <p class="footer__col-heading">Find Us</p>
+      <ul class="footer__contact-list">
+        <li>88 Elmwood Avenue<br />Toronto, ON M6G 2K4</li>
+        <li><a href="tel:6475550183">(647) 555-0183</a></li>
+        <li><a href="mailto:hello@harvesttable.ca">hello@harvesttable.ca</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; 2024 The Harvest Table. All rights reserved. Licensed by the AGCO.</p>
+    <p>88 Elmwood Avenue, Toronto, ON M6G 2K4</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

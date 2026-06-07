@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Harvest Table — Toronto, Ontario</title>
+  <meta name="description" content="The Harvest Table in Toronto's Annex neighbourhood. Farm-to-table dining celebrating Ontario's seasonal bounty — Niagara Peninsula, Prince Edward County, Grey County." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="The Harvest Table — Home">The Harvest Table</a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservations.html" class="nav__reserve">Reserve a Table</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero" aria-label="Welcome">
+  <div class="hero__bg" role="presentation"></div>
+  <div class="hero__texture" role="presentation"></div>
+  <div class="hero__overlay" role="presentation"></div>
+
+  <div class="hero__content">
+    <div class="hero__inner">
+      <div class="hero__label">
+        <span class="label">Toronto, Ontario</span>
+      </div>
+      <h1>The<br />Harvest<br />Table</h1>
+      <p class="sub">Where Ontario's Seasons Come to the Table</p>
+      <div class="hero__ctas">
+        <a href="reservations.html" class="btn btn--primary">Reserve a Table</a>
+        <a href="menu.html" class="btn btn--outline">View Our Menu</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════ INTRO SPLIT ═══════════════════════ -->
+<section class="section section--dark" aria-label="Introduction">
+  <div class="split reveal">
+    <div class="split__image">
+      <div class="photo-placeholder photo-placeholder--interior" role="img" aria-label="The warm, candlelit interior of The Harvest Table dining room">
+        <!-- PHOTO SWAP INSTRUCTIONS: Replace this div with an <img> tag.
+             Recommended size: 800×1000px. File: images/interior-dining.jpg -->
+        <div class="photo-placeholder__label">Interior dining room — replace with photo</div>
+      </div>
+    </div>
+    <div class="split__text">
+      <span class="label">Rooted in Ontario</span>
+      <h2>Where Every Season Tells a Story</h2>
+      <p class="sub">Handcrafted dishes built on relationships with Ontario farmers, vintners, and artisans.</p>
+      <p>We opened The Harvest Table with a single conviction: that a great meal begins long before the kitchen. It begins in the fields of Prince Edward County, the orchards of Grey County, and the vineyards stretching along the Niagara Peninsula.</p>
+      <p>Our menu shifts with the seasons — because the best ingredient is always the freshest one available from our neighbours who grow it with care.</p>
+      <a href="about.html" class="btn btn--outline">Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FEATURED DISHES ═══════════════════════ -->
+<section class="section section--darker section--clip-both" aria-label="Featured dishes">
+  <div class="container">
+    <div class="section__header reveal">
+      <span class="label">From Our Kitchen</span>
+      <h2>Current Favourites</h2>
+      <p class="sub">A taste of what's on the menu this season.</p>
+    </div>
+
+    <div class="dishes-grid">
+      <div class="dish-card reveal reveal--delay-1">
+        <div class="dish-card__image">
+          <div class="photo-placeholder photo-placeholder--dish-1" role="img" aria-label="Pan-seared Lake Erie pickerel with leek fondue and fingerling potatoes">
+            <!-- PHOTO SWAP INSTRUCTIONS: Replace with images/dish-pickerel.jpg -->
+            <div class="photo-placeholder__label">Lake Erie Pickerel — replace with photo</div>
+          </div>
+        </div>
+        <div class="dish-card__body">
+          <span class="label">Mains</span>
+          <h3>Lake Erie Pickerel</h3>
+          <p>Leek fondue, fingerling potatoes, caperberry butter — $42</p>
+        </div>
+      </div>
+
+      <div class="dish-card reveal reveal--delay-2">
+        <div class="dish-card__image">
+          <div class="photo-placeholder photo-placeholder--dish-2" role="img" aria-label="Braised Grey County short rib with celery root purée and gremolata">
+            <!-- PHOTO SWAP INSTRUCTIONS: Replace with images/dish-shortrib.jpg -->
+            <div class="photo-placeholder__label">Braised Short Rib — replace with photo</div>
+          </div>
+        </div>
+        <div class="dish-card__body">
+          <span class="label">Mains</span>
+          <h3>Braised Short Rib</h3>
+          <p>48-hour Grey County beef, celery root purée, gremolata — $52</p>
+        </div>
+      </div>
+
+      <div class="dish-card reveal reveal--delay-3">
+        <div class="dish-card__image">
+          <div class="photo-placeholder photo-placeholder--dish-3" role="img" aria-label="Maple Crème Brûlée with Niagara Peninsula maple syrup and seasonal berries">
+            <!-- PHOTO SWAP INSTRUCTIONS: Replace with images/dish-brulee.jpg -->
+            <div class="photo-placeholder__label">Maple Crème Brûlée — replace with photo</div>
+          </div>
+        </div>
+        <div class="dish-card__body">
+          <span class="label">Desserts</span>
+          <h3>Maple Crème Brûlée</h3>
+          <p>Niagara Peninsula maple syrup, seasonal berry garnish — $13</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 56px;" class="reveal">
+      <a href="menu.html" class="btn btn--outline">Explore the Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SOURCING SPLIT ═══════════════════════ -->
+<section class="section section--dark" aria-label="Sourcing philosophy">
+  <div class="split split--reverse reveal">
+    <div class="split__text">
+      <span class="label">Our Sourcing</span>
+      <h2>The Provenance Behind Every Plate</h2>
+      <p class="sub">We know our farmers by name. We visit their fields. We trust their craft.</p>
+      <p>Our proteins come from heritage-breed farms in Grey County. Our produce arrives weekly from market gardens in Prince Edward County. Our wine list celebrates the extraordinary VQA vintners of the Niagara Peninsula — because Ontario's terroir deserves its moment at the table.</p>
+      <p>No imported fillers. No flavour approximations. Just Ontario, at its honest best.</p>
+      <a href="about.html" class="btn btn--outline">Meet Our Partners</a>
+    </div>
+    <div class="split__image">
+      <div class="photo-placeholder photo-placeholder--farm" role="img" aria-label="Rolling farm fields of Prince Edward County at harvest time">
+        <!-- PHOTO SWAP INSTRUCTIONS: Replace with images/farm-pec.jpg -->
+        <div class="photo-placeholder__label">Prince Edward County farm — replace with photo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TESTIMONIALS ═══════════════════════ -->
+<section class="section section--mid section--clip-top" aria-label="Guest reviews">
+  <div class="container">
+    <div class="section__header reveal">
+      <span class="label">What Guests Say</span>
+      <h2>Memories Made at the Table</h2>
+    </div>
+
+    <div class="testimonials__grid">
+      <div class="testimonial reveal reveal--delay-1">
+        <div class="testimonial__quote" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial__text">The Harvest Table is everything I wish Ontario dining always looked like. Every single dish tasted like someone genuinely cared about where it came from. The pickerel was extraordinary.</p>
+        <p class="testimonial__author">Margaret T.</p>
+        <p class="testimonial__source">Toronto Life Reader, Anniversary Dinner</p>
+      </div>
+
+      <div class="testimonial reveal reveal--delay-2">
+        <div class="testimonial__quote" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial__text">We hosted a client dinner here and it could not have gone better. The short rib is the best thing I've eaten in Toronto in years. The VQA wine list is a masterclass in what Ontario can produce.</p>
+        <p class="testimonial__author">David C.</p>
+        <p class="testimonial__source">Google Review, Business Dinner</p>
+      </div>
+
+      <div class="testimonial reveal reveal--delay-3">
+        <div class="testimonial__quote" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial__text">I've been to every farm-to-table restaurant in the city. None of them commit like The Harvest Table does. The butter tart cheesecake is outrageously good and entirely Canadian. Bravo.</p>
+        <p class="testimonial__author">Priya S.</p>
+        <p class="testimonial__source">Yelp Review, Birthday Celebration</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CTA BANNER ═══════════════════════ -->
+<section class="section section--dark cta-banner section--clip-top" aria-label="Reservation call to action">
+  <h2 class="reveal">Join Us for Your Next Special Occasion</h2>
+  <p class="sub reveal reveal--delay-1">Intimate dinners, milestone celebrations, and everyday evenings worth remembering.<br />We hold a selection of tables for walk-ins — or secure yours in advance.</p>
+  <div class="cta-banner__actions reveal reveal--delay-2">
+    <a href="reservations.html" class="btn btn--primary">Reserve a Table</a>
+    <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__logo">The Harvest Table</p>
+      <p class="footer__tagline">Where Ontario's Seasons Come to the Table</p>
+      <nav class="footer__social" aria-label="Social media">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+      </nav>
+    </div>
+
+    <div class="footer__col">
+      <p class="footer__col-heading">Navigate</p>
+      <ul class="footer__nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <p class="footer__col-heading">Find Us</p>
+      <ul class="footer__contact-list">
+        <li>88 Elmwood Avenue<br />Toronto, ON M6G 2K4</li>
+        <li><a href="tel:6475550183">(647) 555-0183</a></li>
+        <li><a href="mailto:hello@harvesttable.ca">hello@harvesttable.ca</a></li>
+        <li style="margin-top: 4px; font-size: 0.8rem; opacity: 0.5;">Tue – Sun, 5 pm – 10 pm</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; 2024 The Harvest Table. All rights reserved. Licensed by the AGCO.</p>
+    <p>88 Elmwood Avenue, Toronto, ON M6G 2K4</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

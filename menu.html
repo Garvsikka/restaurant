@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — The Harvest Table</title>
+  <meta name="description" content="Our seasonal menu celebrates Ontario's finest — Niagara Peninsula VQA wines, Grey County beef, Prince Edward County produce. Menu changes with every harvest." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav class="nav nav--scrolled" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="The Harvest Table — Home">The Harvest Table</a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservations.html" class="nav__reserve">Reserve a Table</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ PAGE HERO ═══════════════════════ -->
+<section class="page-hero" aria-label="Menu header">
+  <div class="page-hero__bg page-hero__bg--food" role="presentation"></div>
+  <div class="page-hero__overlay" role="presentation"></div>
+  <div class="page-hero__content">
+    <span class="label">The Harvest Table</span>
+    <h1>Our Menu</h1>
+    <p class="sub" style="max-width: 48ch; margin-top: 16px;">Seasonal dishes rooted in Ontario's finest growing regions.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TAB NAV ═══════════════════════ -->
+<div class="menu-tabs" role="tablist" aria-label="Menu sections">
+  <div class="menu-tabs__inner">
+    <button class="tab-btn is-active" data-tab="starters" role="tab" aria-selected="true" aria-controls="tab-starters">Starters</button>
+    <button class="tab-btn" data-tab="mains" role="tab" aria-selected="false" aria-controls="tab-mains">Mains</button>
+    <button class="tab-btn" data-tab="desserts" role="tab" aria-selected="false" aria-controls="tab-desserts">Desserts</button>
+    <button class="tab-btn" data-tab="drinks" role="tab" aria-selected="false" aria-controls="tab-drinks">Drinks</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════ MENU BODY ═══════════════════════ -->
+<div class="menu-body">
+  <div class="menu-content">
+
+    <!-- ─── STARTERS ─── -->
+    <div class="tab-panel is-active" id="tab-starters" role="tabpanel" aria-labelledby="tab-btn-starters">
+      <div class="menu-panel__header">
+        <span class="label">To Begin</span>
+        <h2>Starters</h2>
+        <p class="sub">Small plates to open your evening — share them, or keep them all to yourself.</p>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Roasted Beet &amp; Chèvre</p>
+              <p class="menu-item__desc">Local goat cheese, candied walnuts, pickled shallots, beet gastrique, micro greens</p>
+            </div>
+            <span class="menu-item__price">$18</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Grey County Corn Chowder</p>
+              <p class="menu-item__desc">Sweet corn bisque, smoked bacon lardons, fingerling chips, chive oil</p>
+            </div>
+            <span class="menu-item__price">$16</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Seared Prince Edward County Scallops</p>
+              <p class="menu-item__desc">Cauliflower purée, pancetta crisp, preserved lemon, herb oil</p>
+            </div>
+            <span class="menu-item__price">$24</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Wild Mushroom Toast</p>
+              <p class="menu-item__desc">Niagara-foraged mushrooms on house sourdough, truffle crème, shaved aged parmesan</p>
+            </div>
+            <span class="menu-item__price">$19</span>
+          </div>
+        </div>
+
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Ontario Artisan Cheese Board</p>
+              <p class="menu-item__desc">Rotating selection of three Ontario cheeses, wildflower honeycomb, house preserves, seed crisps</p>
+            </div>
+            <span class="menu-item__price">$22</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Duck Confit Croquettes</p>
+              <p class="menu-item__desc">Crispy hand-rolled, sage aioli, pickled red cabbage, grain mustard</p>
+            </div>
+            <span class="menu-item__price">$21</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Steak Tartare</p>
+              <p class="menu-item__desc">Hand-cut Ontario beef, capers, cornichons, Dijon, house-made brioche toasts</p>
+            </div>
+            <span class="menu-item__price">$23</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Smoked Whitefish Rillette</p>
+              <p class="menu-item__desc">Georgian Bay smoked whitefish, crème fraîche, dill, pickled cucumber, rye crisps</p>
+            </div>
+            <span class="menu-item__price">$20</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── MAINS ─── -->
+    <div class="tab-panel" id="tab-mains" role="tabpanel" aria-labelledby="tab-btn-mains">
+      <div class="menu-panel__header">
+        <span class="label">The Main Event</span>
+        <h2>Mains</h2>
+        <p class="sub">Generous, considered plates built around the season's best from across Ontario.</p>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Roasted Ontario Free-Range Chicken</p>
+              <p class="menu-item__desc">Mennonite heritage breed, root vegetable gratin, roasting jus, crispy capers, micro herbs</p>
+            </div>
+            <span class="menu-item__price">$38</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Seared Lake Erie Pickerel</p>
+              <p class="menu-item__desc">Leek fondue, roasted fingerling potatoes, caperberry butter, fennel frond</p>
+            </div>
+            <span class="menu-item__price">$42</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Braised Grey County Short Rib</p>
+              <p class="menu-item__desc">48-hour slow braise, celery root purée, roasted bone marrow gremolata, pickled shallots</p>
+            </div>
+            <span class="menu-item__price">$52</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Harvest Table Burger</p>
+              <p class="menu-item__desc">Ontario beef blend, aged Ontario cheddar, house pickles, smoked aioli, brioche bun, hand-cut fries</p>
+            </div>
+            <span class="menu-item__price">$24</span>
+          </div>
+        </div>
+
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Mushroom &amp; Prince Edward County Lentil Wellington</p>
+              <p class="menu-item__desc">Wild mushroom duxelles, French green lentils, golden puff pastry, red wine reduction <span style="font-size:0.75rem; opacity:0.6;">(V)</span></p>
+            </div>
+            <span class="menu-item__price">$34</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Hand-Rolled Ricotta Gnocchi</p>
+              <p class="menu-item__desc">Brown butter, toasted pine nuts, fried sage, shaved aged pecorino, seasonal mushrooms <span style="font-size:0.75rem; opacity:0.6;">(V)</span></p>
+            </div>
+            <span class="menu-item__price">$32</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Niagara Peninsula Duck Breast</p>
+              <p class="menu-item__desc">Seared magret, sour cherry gastrique, potato rösti, wilted bitter greens, duck jus</p>
+            </div>
+            <span class="menu-item__price">$46</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Pan-Seared Ontario Lamb Chops</p>
+              <p class="menu-item__desc">Two double-cut chops, white bean cassoulet, rosemary jus, mint gremolata</p>
+            </div>
+            <span class="menu-item__price">$54</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── DESSERTS ─── -->
+    <div class="tab-panel" id="tab-desserts" role="tabpanel" aria-labelledby="tab-btn-desserts">
+      <div class="menu-panel__header">
+        <span class="label">A Sweet Finish</span>
+        <h2>Desserts</h2>
+        <p class="sub">Desserts inspired by Canada's sweetest traditions — and the seasons that shape them.</p>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Butter Tart Cheesecake</p>
+              <p class="menu-item__desc">Flaky butter tart-style pastry crust, Ontario maple-pecan filling, whipped chèvre cream, salted caramel drizzle</p>
+            </div>
+            <span class="menu-item__price">$14</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Maple Crème Brûlée</p>
+              <p class="menu-item__desc">Niagara Peninsula pure maple syrup custard, Madagascar vanilla bean, seasonal berry compote, burnt sugar crust</p>
+            </div>
+            <span class="menu-item__price">$13</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Sticky Toffee Pudding</p>
+              <p class="menu-item__desc">Warm Medjool date cake, house toffee sauce, Kawartha Dairy vanilla bean ice cream</p>
+            </div>
+            <span class="menu-item__price">$12</span>
+          </div>
+        </div>
+
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Grey County Apple Galette</p>
+              <p class="menu-item__desc">Heritage apple varieties, cinnamon frangipane, rough-edged pastry, crème fraîche</p>
+            </div>
+            <span class="menu-item__price">$11</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Ontario Artisan Cheese Selection</p>
+              <p class="menu-item__desc">Three cheeses from Ontario's finest creameries, quince paste, wildflower honeycomb, fig preserves, seed crackers</p>
+            </div>
+            <span class="menu-item__price">$18</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <p class="menu-item__name">Chocolate Terrine</p>
+              <p class="menu-item__desc">Dark Valrhona ganache, salted caramel layer, hazelnut praline, crème anglaise</p>
+            </div>
+            <span class="menu-item__price">$13</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── DRINKS ─── -->
+    <div class="tab-panel" id="tab-drinks" role="tabpanel" aria-labelledby="tab-btn-drinks">
+      <div class="menu-panel__header">
+        <span class="label">Cellar &amp; Bar</span>
+        <h2>Drinks</h2>
+        <p class="sub">We pour with pride — Ontario's finest VQA wines, craft beers, and house cocktails.</p>
+      </div>
+
+      <!-- VQA Whites -->
+      <div class="drinks-group">
+        <h4 class="drinks-group__heading">VQA White Wines — Niagara Peninsula &amp; Beyond</h4>
+        <div class="menu-grid">
+          <div class="menu-col">
+            <div class="menu-item menu-item--wine">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Tawse Winery Chardonnay</p>
+                <p class="menu-item__desc">Niagara Peninsula VQA — mineral-forward, notes of green apple, toasted oak, and citrus zest</p>
+              </div>
+              <div class="menu-item__price">
+                <span class="price-glass">$16 / glass</span>
+                <span class="price-bottle">$68 / bottle</span>
+              </div>
+            </div>
+
+            <div class="menu-item menu-item--wine">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Cave Spring Estate Riesling</p>
+                <p class="menu-item__desc">Beamsville Bench VQA — off-dry, vibrant lime and slate, exceptional with our pickerel</p>
+              </div>
+              <div class="menu-item__price">
+                <span class="price-glass">$14 / glass</span>
+                <span class="price-bottle">$58 / bottle</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-col">
+            <div class="menu-item menu-item--wine">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Konzelmann Estate Gewürztraminer</p>
+                <p class="menu-item__desc">Niagara-on-the-Lake VQA — aromatic, lychee and rose petal, pleasantly off-dry</p>
+              </div>
+              <div class="menu-item__price">
+                <span class="price-glass">$13 / glass</span>
+                <span class="price-bottle">$54 / bottle</span>
+              </div>
+            </div>
+
+            <div class="menu-item menu-item--wine">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Flat Rock Cellars Pinot Gris</p>
+                <p class="menu-item__desc">Twenty Mile Bench VQA — full-bodied, orchard fruit, long spiced finish</p>
+              </div>
+              <div class="menu-item__price">
+                <span class="price-glass">$15 / glass</span>
+                <span class="price-bottle">$62 / bottle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VQA Reds -->
+      <div class="drinks-group">
+        <h4 class="drinks-group__heading">VQA Red Wines — Niagara Peninsula</h4>
+        <div class="menu-grid">
+          <div class="menu-col">
+            <div class="menu-item menu-item--wine">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Château des Charmes Pinot Noir</p>
+                <p class="menu-item__desc">Niagara-on-the-Lake VQA — silky and elegant, red cherry, earthy woodland notes</p>
+              </div>
+              <div class="menu-item__price">
+                <span class="price-glass">$17 / glass</span>
+                <span class="price-bottle">$72 / bottle</span>
+              </div>
+            </div>
+
+            <div class="menu-item menu-item--wine">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Henry of Pelham Baco Noir Reserve</p>
+                <p class="menu-item__desc">Short Hills Bench VQA — bold, inky, dark fruit and vanilla — distinctly Ontarian</p>
+              </div>
+              <div class="menu-item__price">
+                <span class="price-glass">$15 / glass</span>
+                <span class="price-bottle">$64 / bottle</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-col">
+            <div class="menu-item menu-item--wine">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Malivoire Wine Co. Gamay</p>
+                <p class="menu-item__desc">Beamsville Bench VQA — bright, juicy, whole-cluster style, exquisite with our duck</p>
+              </div>
+              <div class="menu-item__price">
+                <span class="price-glass">$16 / glass</span>
+                <span class="price-bottle">$68 / bottle</span>
+              </div>
+            </div>
+
+            <div class="menu-item menu-item--wine">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Stratus Red</p>
+                <p class="menu-item__desc">Niagara-on-the-Lake VQA — flagship Bordeaux-style blend, structured and cellar-worthy</p>
+              </div>
+              <div class="menu-item__price">
+                <span class="price-glass">$22 / glass</span>
+                <span class="price-bottle">$92 / bottle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ontario Craft Beer -->
+      <div class="drinks-group">
+        <h4 class="drinks-group__heading">Ontario Craft Beer — Ontario Craft Brewers Members</h4>
+        <div class="menu-grid">
+          <div class="menu-col">
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Mill Street Organic Lager</p>
+                <p class="menu-item__desc">Toronto — clean, crisp, certified organic — a reliable classic</p>
+              </div>
+              <span class="menu-item__price">$9</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Collective Arts Rhyme &amp; Reason IPA</p>
+                <p class="menu-item__desc">Hamilton — citrus-forward, balanced bitterness, always seasonal label art</p>
+              </div>
+              <span class="menu-item__price">$10</span>
+            </div>
+          </div>
+
+          <div class="menu-col">
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Muskoka Brewery Twice As Mad Tom DIPA</p>
+                <p class="menu-item__desc">Bracebridge — double IPA, bold tropical hop aroma, not for the faint of heart</p>
+              </div>
+              <span class="menu-item__price">$11</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Left Field Brewery Snowbird Pale Ale</p>
+                <p class="menu-item__desc">Toronto — approachable, balanced, clean finish — a year-round favourite</p>
+              </div>
+              <span class="menu-item__price">$9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cocktails & Spirits -->
+      <div class="drinks-group">
+        <h4 class="drinks-group__heading">House Cocktails &amp; Non-Alcoholic</h4>
+        <div class="menu-grid">
+          <div class="menu-col">
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ontario Harvest Old Fashioned</p>
+                <p class="menu-item__desc">Canadian rye whisky, Prince Edward County maple syrup, Angostura, orange</p>
+              </div>
+              <span class="menu-item__price">$18</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Niagara Peach Bellini</p>
+                <p class="menu-item__desc">Sparkling VQA wine, house-made Niagara peach purée, a hint of ginger</p>
+              </div>
+              <span class="menu-item__price">$16</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Seasonal Shrub Spritzer</p>
+                <p class="menu-item__desc">House fruit and apple cider vinegar shrub, sparkling water, seasonal garnish <span style="font-size:0.75rem; opacity:0.6;">(NA)</span></p>
+              </div>
+              <span class="menu-item__price">$8</span>
+            </div>
+          </div>
+
+          <div class="menu-col">
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Sage &amp; Pear Spritz</p>
+                <p class="menu-item__desc">Grey County pear juice, fresh sage, elderflower, soda <span style="font-size:0.75rem; opacity:0.6;">(NA)</span></p>
+              </div>
+              <span class="menu-item__price">$8</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">House-Made Lemonade</p>
+                <p class="menu-item__desc">Ontario honey, fresh lemon, lavender or mint <span style="font-size:0.75rem; opacity:0.6;">(NA)</span></p>
+              </div>
+              <span class="menu-item__price">$7</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Filter Coffee</p>
+                <p class="menu-item__desc">Sourced from a local Toronto roaster. Served with house cream. <span style="font-size:0.75rem; opacity:0.6;">(NA)</span></p>
+              </div>
+              <span class="menu-item__price">$5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Notes — always visible -->
+    <div class="menu-footer-notes">
+      <p>Menu changes seasonally to reflect Ontario's freshest local ingredients. Not all items are available every evening — ask your server about tonight's additions and 86'd items.</p>
+      <p>Please inform your server of any allergies or dietary requirements before ordering. Our kitchen handles tree nuts, shellfish, gluten, dairy, and eggs. We cannot guarantee a completely allergen-free environment. We accept Interac, Visa, Mastercard, and debit.</p>
+    </div>
+
+  </div><!-- .menu-content -->
+</div><!-- .menu-body -->
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__logo">The Harvest Table</p>
+      <p class="footer__tagline">Where Ontario's Seasons Come to the Table</p>
+      <nav class="footer__social" aria-label="Social media">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+      </nav>
+    </div>
+    <div class="footer__col">
+      <p class="footer__col-heading">Navigate</p>
+      <ul class="footer__nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <p class="footer__col-heading">Find Us</p>
+      <ul class="footer__contact-list">
+        <li>88 Elmwood Avenue<br />Toronto, ON M6G 2K4</li>
+        <li><a href="tel:6475550183">(647) 555-0183</a></li>
+        <li><a href="mailto:hello@harvesttable.ca">hello@harvesttable.ca</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; 2024 The Harvest Table. All rights reserved. Licensed by the AGCO.</p>
+    <p>88 Elmwood Avenue, Toronto, ON M6G 2K4</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

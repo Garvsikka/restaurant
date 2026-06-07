@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations — The Harvest Table</title>
+  <meta name="description" content="Reserve a table at The Harvest Table in Toronto. We recommend booking 2–3 weeks in advance. Walk-ins welcome on available evenings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav class="nav nav--scrolled" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="The Harvest Table — Home">The Harvest Table</a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservations.html" class="nav__reserve">Reserve a Table</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ PAGE HERO ═══════════════════════ -->
+<section class="page-hero" aria-label="Reservations header">
+  <div class="page-hero__bg page-hero__bg--reserve" role="presentation"></div>
+  <div class="page-hero__overlay" role="presentation"></div>
+  <div class="page-hero__content">
+    <span class="label">Join Us</span>
+    <h1>Reservations</h1>
+    <p class="sub" style="max-width: 48ch; margin-top: 16px;">Secure your evening at The Harvest Table — intimate, intentional, and entirely Ontario.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════ BOOKING FORM ═══════════════════════ -->
+<section class="section section--dark" aria-label="Booking form">
+  <div class="form-section">
+    <div class="section__header reveal">
+      <span class="label">Book Your Table</span>
+      <h2>Make a Reservation</h2>
+      <p class="sub">We recommend booking 2–3 weeks in advance, especially for Friday and Saturday evenings. A limited number of walk-in seats are available nightly.</p>
+    </div>
+
+    <div class="form-layout">
+      <!-- Booking Form -->
+      <div class="reveal">
+        <form class="booking-form" data-form="reservation" data-success="Thank you — your request has been received. We'll confirm your reservation within 24 hours by email or phone." data-error="Something went wrong. Please call us directly at (647) 555-0183." novalidate>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Isabelle" required autocomplete="given-name" />
+            </div>
+            <div class="form__field">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Moreau" required autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="isabelle@example.com" required autocomplete="email" />
+            </div>
+            <div class="form__field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(647) 555-0000" required autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form__field">
+              <label for="time">Preferred Time</label>
+              <select id="time" name="time" required>
+                <option value="" disabled selected>Select a time</option>
+                <option value="17:00">5:00 pm</option>
+                <option value="17:30">5:30 pm</option>
+                <option value="18:00">6:00 pm</option>
+                <option value="18:30">6:30 pm</option>
+                <option value="19:00">7:00 pm</option>
+                <option value="19:30">7:30 pm</option>
+                <option value="20:00">8:00 pm</option>
+                <option value="20:30">8:30 pm</option>
+                <option value="21:00">9:00 pm</option>
+                <option value="21:30">9:30 pm</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="party-size">Party Size</label>
+            <select id="party-size" name="party_size" required>
+              <option value="" disabled selected>Number of guests</option>
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+              <option value="7">7 guests</option>
+              <option value="8">8 guests</option>
+              <option value="large">9+ guests — please call us</option>
+            </select>
+          </div>
+
+          <div class="form__field">
+            <label for="occasion">Occasion <span style="opacity:0.5; font-weight:400;">(optional)</span></label>
+            <select id="occasion" name="occasion">
+              <option value="" selected>No special occasion</option>
+              <option value="birthday">Birthday</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="business">Business dinner</option>
+              <option value="engagement">Engagement</option>
+              <option value="other">Other celebration</option>
+            </select>
+          </div>
+
+          <div class="form__field">
+            <label for="requests">Dietary Requirements or Special Requests <span style="opacity:0.5; font-weight:400;">(optional)</span></label>
+            <textarea id="requests" name="requests" placeholder="Allergies, dietary restrictions, accessibility needs, or anything else we should know…" rows="4"></textarea>
+          </div>
+
+          <div class="form__submit">
+            <button type="submit" class="btn btn--primary" data-label="Request Reservation">Request Reservation</button>
+          </div>
+
+          <div class="form-status" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- Sidebar Info -->
+      <div class="reservation-sidebar reveal reveal--delay-2">
+        <h3>Good to Know</h3>
+
+        <div class="info-block">
+          <span class="label">Hours</span>
+          <table class="hours-table" aria-label="Restaurant hours">
+            <tbody>
+              <tr><td>Tuesday – Thursday</td><td>5 pm – 10 pm</td></tr>
+              <tr><td>Friday</td><td>5 pm – 11 pm</td></tr>
+              <tr><td>Saturday</td><td>5 pm – 11 pm</td></tr>
+              <tr><td>Sunday</td><td>5 pm – 9 pm</td></tr>
+              <tr><td>Monday</td><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-block">
+          <span class="label">Reservation Policy</span>
+          <p>We confirm by email within 24 hours. We hold reserved tables for 15 minutes. For parties of 6 or more, please call us directly at <a href="tel:6475550183" style="color: var(--terracotta);">(647) 555-0183</a>.</p>
+        </div>
+
+        <div class="info-block">
+          <span class="label">Private Dining</span>
+          <p>The Cellar seats up to 12 guests for private dinners, business meals, and special celebrations. Bespoke menus available. Contact us to enquire.</p>
+        </div>
+
+        <div class="info-block">
+          <span class="label">Walk-Ins</span>
+          <p>We reserve a portion of our dining room for walk-in guests each evening. Bar seating is also available without a reservation — first come, first served.</p>
+        </div>
+
+        <div class="info-block">
+          <span class="label">Payment Accepted</span>
+          <div class="payment-methods">
+            <span class="payment-tag">Interac</span>
+            <span class="payment-tag">Visa</span>
+            <span class="payment-tag">Mastercard</span>
+            <span class="payment-tag">Debit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__logo">The Harvest Table</p>
+      <p class="footer__tagline">Where Ontario's Seasons Come to the Table</p>
+      <nav class="footer__social" aria-label="Social media">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+      </nav>
+    </div>
+    <div class="footer__col">
+      <p class="footer__col-heading">Navigate</p>
+      <ul class="footer__nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <p class="footer__col-heading">Find Us</p>
+      <ul class="footer__contact-list">
+        <li>88 Elmwood Avenue<br />Toronto, ON M6G 2K4</li>
+        <li><a href="tel:6475550183">(647) 555-0183</a></li>
+        <li><a href="mailto:hello@harvesttable.ca">hello@harvesttable.ca</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; 2024 The Harvest Table. All rights reserved. Licensed by the AGCO.</p>
+    <p>88 Elmwood Avenue, Toronto, ON M6G 2K4</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
